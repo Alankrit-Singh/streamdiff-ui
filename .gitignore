@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.vite/
+coverage/
+
+# Local dev scripts (may contain personal URLs / tokens)
+run-local.sh
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,54 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'SF Mono', 'Consolas', 'Liberation Mono', monospace;
+  background: #0d1117;
+  color: #c9d1d9;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  border: 1px solid #30363d;
+  background: #161b22;
+  color: #c9d1d9;
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: background 0.15s, border-color 0.15s;
+}
+button:hover { background: #21262d; border-color: #58a6ff; }
+button.primary { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+button.primary:hover { background: #388bfd; }
+button.danger { border-color: #f85149; color: #f85149; }
+button.danger:hover { background: #1a0707; }
+
+input, textarea {
+  font-family: inherit;
+  font-size: 12px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 6px 10px;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+}
+input:focus, textarea:focus { border-color: #58a6ff; }
+
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; padding: 6px 10px; color: #8b949e; border-bottom: 1px solid #21262d; font-weight: normal; text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em; }
+td { padding: 6px 10px; border-bottom: 1px solid #161b22; }
+tr:hover td { background: #161b22; }
+
+.tag-green  { color: #3fb950; }
+.tag-amber  { color: #e3b341; }
+.tag-red    { color: #f85149; }
+.tag-blue   { color: #58a6ff; }
+.tag-muted  { color: #8b949e; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
